@@ -36,8 +36,13 @@ public class Application implements IApplication {
 		
 		String [] args = (String[]) context.getArguments().get(APPARGS);
 		
-		if (Arrays.asList(args).contains("-pnfolder")) {
-			return new fr.lip6.move.gal.application.Application().start(context);
+		{
+			List<String> argsAsArray = Arrays.asList(args);
+			if (argsAsArray.contains("-pnfolder")) {
+				return new fr.lip6.move.gal.application.Application().start(context);
+			} else if (argsAsArray.contains("-order")) {
+				return new fr.lip6.move.gal.order.application.Application().start(context);
+			}
 		}
 		String inputff = null;
 		String inputType = null;
