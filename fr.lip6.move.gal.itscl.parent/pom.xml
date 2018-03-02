@@ -350,6 +350,11 @@
 		</repository>
 
 		<repository>
+			<id>ITSTools Order Group</id>
+			<layout>p2</layout>
+			<url>https://thamazghaSMAIL.github.io/ITS-contribution/</url>
+		</repository>
+		<repository>
 			<id>Eclipse current release</id>
 			<layout>p2</layout>
 			<url>http://download.eclipse.org/releases/${platform-version-name}</url>
